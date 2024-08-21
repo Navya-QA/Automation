@@ -1,4 +1,4 @@
-dnf install nginx -y  
+dnf install nginx -y  1.20.1
 echo "Installed Nginx"
 systemctl enable nginx 
 echo "Enabled Nginx"
