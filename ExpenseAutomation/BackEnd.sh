@@ -5,10 +5,12 @@ useradd expense
 mkdir /app 
 curl -o /tmp/backend.zip https://expense-web-app.s3.amazonaws.com/backend.zip 
 cd /app 
-npm install
+
 unzip /tmp/backend.zip
 
-cp BackEnd.sh /etc/systemd/system/backend.service
+cp Backproxy.conf /etc/systemd/system/backend.service
+
+npm install
 
 echo "Creating service account"
  chmod -R 775 /app
