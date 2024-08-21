@@ -7,6 +7,8 @@ curl -o /tmp/backend.zip https://expense-web-app.s3.amazonaws.com/backend.zip
 cd /app 
 
 unzip /tmp/backend.zip
+pwd 
+ls -ltr
 
 cp Backproxy.conf /etc/systemd/system/backend.service
 
