@@ -10,6 +10,8 @@ unzip /tmp/frontend.zip
 
 cp proxy.conf /etc/nginx/default.d/expense.conf
 
+echo " restart"
+systemctl enable nginx 
 systemctl restart nginx 
 systemctl status nginx  
 
