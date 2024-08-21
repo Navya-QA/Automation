@@ -12,3 +12,6 @@ cp proxy.conf /etc/nginx/default.d/expense.conf
 
 systemctl restart nginx 
 systemctl status nginx  
+
+
+echo " FrontEnd installation successful"
