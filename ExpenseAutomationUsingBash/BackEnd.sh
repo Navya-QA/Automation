@@ -20,7 +20,7 @@ echo "Creating service account"
 chown -R expense:expense /app
 
 dnf install mysql-server -y
-mysql -h 3.84.141.39 -uroot -pExpenseApp@1 < /app/schema/backend.sql 
+mysql -h localhost -uroot -pExpenseApp@1 < /app/schema/backend.sql 
 systemctl daemon-reload
 systemctl enable backend 
 systemctl start backend
