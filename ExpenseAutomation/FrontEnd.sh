@@ -1,7 +1,7 @@
-dnf install nginx -y  1.20.1
+dnf install nginx -y 
 echo "Installed Nginx"
 systemctl enable nginx 
-echo "Enabled Nginx"
+echo "Enabled Nginx"  
 cp proxy.conf /etc/nginx/default.d/expense.conf
 
 rm -rf /usr/share/nginx/html/* 
